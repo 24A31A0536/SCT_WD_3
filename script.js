@@ -1,6 +1,6 @@
 // ===== API CONFIGURATION =====
 // Add your Groq API key here
-const API_KEY = import.meta.env.VITE_Quiz_API_KEY; 
+const API_KEY = 'API_KEY_HERE';
 const API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 // Quiz data will be populated from API
