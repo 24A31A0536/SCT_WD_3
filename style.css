@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-color: #1f2937;
+    --border-color: #e5e7eb;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.quiz-container {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.header {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.progress {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+.question-section {
+    min-height: 180px;
+}
+
+.question-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.options-list {
+    list-style: none;
+}
+
+.option-item {
+    margin-bottom: 12px;
+}
+
+.option-item label {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-item label:hover {
+    background-color: #f9fafb;
+    border-color: #cbd5e1;
+}
+
+.option-item input {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+
+.blank-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.blank-input:focus {
+    border-color: var(--primary-color);
+}
+
+.navigation-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-nav {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.btn-nav:hover:not(:disabled) {
+    background-color: #d1d5db;
+}
+
+.btn-nav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-submit {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #059669;
+}
+
+.results {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.results h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#feedback-text {
+    margin-bottom: 25px; 
+    color: #4b5563;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.restart-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.restart-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.topic-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.topic-section h1 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.topic-section p {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.topic-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.topic-input:focus {
+    border-color: var(--primary-color);
+}
+
+.btn-start {
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-start:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-start:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.loading-text {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
